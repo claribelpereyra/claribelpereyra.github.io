@@ -36,4 +36,4 @@ h1.addClass("titular");
 intro.find("p").before(`<div class="line"></div>`);
 nudo.append(`<div class="overlay"></div>`);
 fin.after(`<div class="divisor"></div>`);
-$(".divisor").html(`<p>Luciano Perrella</p>`);
+$(".divisor").html(`<p>Claribel Pereyra</p>`);
