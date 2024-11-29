@@ -1,0 +1,78 @@
+#primer_ejercicio {
+  background-color: aquamarine;
+  margin: 20px 20px;
+  padding: 15px;
+}
+
+#segundo_ejercicio {
+  background-image: url("../img/misty.png");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#tercer_ejercicio {
+  border: solid 2px;
+  border-color: red;
+  border-radius: 10px;
+}
+
+#cuarto_ejercicio .parrafo {
+  font-weight: bold;
+  border: solid 2px;
+  padding: 2px;
+}
+
+#cuarto_ejercicio {
+  border: solid 2px;
+}
+
+#quinto_ejercicio div {
+  background-color: yellow;
+  text-align: center;
+}
+
+#sexto_ejercicio {
+  border: 5px double purple;
+  background-color: gold;
+  margin: 40px 40px;
+}
+
+#septimo_ejercicio {
+  background-image: url("../img/images\ \(1\).jpg");
+  background-repeat: no-repeat;
+  background-position: bottom right;
+}
+
+#octavo_ejercicio {
+  background-image: url("../img/gatofotografo.png");
+  background-size: 50% 100%;
+}
+
+#noveno_ejercicio {
+  background-color: green;
+  background-image: url("../img/cat.gif");
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: contain;
+}
+
+#btn_modificar {
+  background-color: aqua;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+#decimo_ejercicio {
+  width: 50%;
+
+  border: dotted 3px green;
+  padding: 25px 25px 25px 25px;
+}
+#parallax {
+  z-index: -1;
+}
+
+#contenido {
+  position: relative;
+  z-index: 1;
+}

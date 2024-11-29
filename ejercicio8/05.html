@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quinto Ejercicio</title>
+  </head>
+  <body>
+    <script>
+      const randomNum = parseInt(Math.random() * 11);
+      let respuesta = parseInt(prompt("Intente adivinar el número: "));
+
+      while (randomNum != respuesta) {
+        if (respuesta < 0 || respuesta > 10 || isNaN(respuesta)) {
+          alert("Solo se aceptan números del 0 al 10");
+        } else if (respuesta < randomNum) {
+          alert("Tu número ingresado es menor que el número aleatorio.");
+        } else {
+          alert("Tu número ingresado es mayor que el número aleatorio.");
+        }
+
+        respuesta = parseInt(prompt("Intente adivinar el número: "));
+      }
+
+      alert(`Correcto, has adivinado el número: ${randomNum} `);
+    </script>
+  </body>
+</html>

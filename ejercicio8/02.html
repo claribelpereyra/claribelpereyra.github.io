@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Segundo ejercicio</title>
+  </head>
+  <body>
+    <script>
+      let ancho = parseInt(prompt("Ingrese el ancho del rectángulo: "));
+      let alto = parseInt(prompt("Ingrese el alto del rectángulo: "));
+    </script>
+
+    <p id="perimetro"></p>
+    <p id="area"></p>
+
+    <script>
+      let perimetro = 2 * ancho + 2 * alto;
+      let area = alto * ancho;
+
+      document.getElementById(
+        "perimetro"
+      ).innerHTML = `El perímetro del rectángulo es: ${perimetro}`;
+      document.getElementById(
+        "area"
+      ).innerHTML = `El perímetro del rectángulo es: ${area}`;
+    </script>
+  </body>
+</html>

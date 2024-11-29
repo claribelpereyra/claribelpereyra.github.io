@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tercer ejercicio</title>
+  </head>
+  <body>
+    <script>
+      let primerLado = parseInt(prompt("Ingrese el primer lado: "));
+      let segundoLado = parseInt(prompt("Ingrese el segundo lado: "));
+      let tercerLado = parseInt(prompt("Ingrese el tercer lado: "));
+    </script>
+    <script>
+      if (primerLado === segundoLado && primerLado === tercerLado) {
+        alert("Es un triángulo equilatero (todos los lados son iguales)");
+      } else if (
+        (primerLado === segundoLado) |
+        (primerLado === tercerLado) |
+        (segundoLado === tercerLado)
+      ) {
+        alert("Es un triángulo isóceles (2 lados iguales)");
+      } else {
+        alert("Es un triángulo escaleno (3 lados distintos)");
+      }
+    </script>
+  </body>
+</html>

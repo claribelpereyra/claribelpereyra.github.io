@@ -1,0 +1,74 @@
+.background {
+    background-color: rgb(85, 137, 242);
+    margin: 20px;
+    padding: 15px;
+}
+
+.background-image {
+    background-image: url(../img/fondo1.JPG);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.broder{
+    border: 2px solid rgb(255, 0, 0);
+    border-radius: 10px;
+}
+
+.clari {
+    border: 2px solid rgb(255, 0, 0);
+    font-weight: bold;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.quintos-estilos{
+    text-align: center;
+    background-color: rgb(239, 239, 57);
+}
+
+.sextos-estilos{
+    border: 5px;
+    border-color: brown;
+    border-style: double;
+    background-color: rgb(233, 175, 81);
+    margin: 40px;
+}
+
+.septimos-estilos{
+    background-image: url(../img/fondo1.JPG);
+    background-position: bottom right;
+    background-size: 50%;
+    background-repeat: no-repeat;
+}
+
+.octavos-estilos{
+    background-image: url(../img/fondo1.JPG);
+    background-size: 50%;
+    background-repeat: repeat-y;
+    padding: 20px;
+}
+
+.novenos-estilos{
+    background-color: brown;
+    background-image: url(../img/fondo1.JPG);
+    background-image: bottom right;
+    background-size: 20%;
+    background-repeat: repeat-x;
+}
+
+.novenos-estilos .btn {
+    background-color: thistle;
+    margin-top: 5px;
+}
+
+.decima-seccion{
+    width: 50%;
+    border: 3px;
+    border-style: dotted;
+    border-color: green;
+    paggin: url(../img/fondo1.JPG);
+    background-size: 20%;
+    background-repeat: no-repeat;
+}

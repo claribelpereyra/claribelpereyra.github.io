@@ -1,0 +1,51 @@
+.color {
+    display: none;
+}
+.horizon{
+    display: flex;
+    flex-direction: row;
+}
+
+@media (min-width: 960px) {
+    .color {
+        background-color: red;
+    }
+}
+@media (max-width: 600px) {
+    .fuente {
+        font-size: 2rem;
+    }
+
+}
+@media (orientation: portrait) {
+    .vertical {
+        display: none;
+    }
+}
+@media (orientation: landscape) {
+    .horizontal {
+        display: block;
+    }
+}
+@media (max-width: 768px) {
+    .columnas {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media (min-width: 1200px) {
+    .espacio {
+        margin: 200px;
+    }
+}
+@media (max-width: 576px) {
+    h1,h2,h3,h4,h5{
+        font-family: sans-serif;
+    }
+}
+@media (max-width: 480px) {
+    .foto {
+        width: 20%;
+    }
+}

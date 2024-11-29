@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cuarto ejercicio</title>
+  </head>
+  <body>
+    <div id="resultado"></div>
+    <script>
+      let numeros = [];
+      for (i = 1; i <= 5; i++) {
+        let num = parseInt(prompt(`Ingrese el número ${i}: `));
+        numeros.push(num);
+      }
+
+      let menor = Math.min(...numeros);
+      let mayor = Math.max(...numeros);
+
+      const resultados = `
+        <ul>
+            <li>Número mayor: ${mayor}</li>
+            <li>Número menor: ${menor}</li>
+        </ul>
+        `;
+
+      document.getElementById("resultado").innerHTML = resultados;
+    </script>
+  </body>
+</html>

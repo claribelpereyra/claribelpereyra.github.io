@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+	<meta charset="utf-8" />
+	<title>only one picture</title>
+	<!-- css only for the page layout -->
+	<style>
+		html{
+			margin: 0;
+			padding: 0;
+			background-color: #999;
+			height: 100%;
+			font-family: Arial;
+			color: #999;
+		}
+		body{
+			padding: 20px;
+			margin: 0 auto 0 auto;
+			width: 1000px;
+			background-color: #ccc;
+			height: 100%;
+		}
+		a{text-decoration: none;}
+		@media(max-width: 1000px){
+			body{
+				width: 90%;
+				padding: 5%;
+			}
+		}
+		@media(max-width: 500px){
+			img{
+				width: 90%;
+			}
+		}
+	</style>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- css for NSB Box -->
+	<link href="NSB_Box.css" rel="stylesheet" type="text/css" />
+	
+	<!-- jquery and NSB_Box.js Javascript for NSB Box -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="NSB_Box.js"></script>
+
+</head>
+<body>
+<h1>example with one picture which is linked</h1>
+<a class="nsbbox" title="Tonstudio" href="images/Studio1B.jpg">
+	<img class="right" title="Tonstudio" src="images/Studio1S.jpg" alt="Tonstudio">
+</a>
+<h3>
+	<a class="nsbbox" title="iFrame max width" href="linkedPage.html">
+		open linked page in floating window
+	</a>
+</h3>
+<h3>
+	<a class="nsbbox" title="iFrame 500px X 400px" href="linkedPage.html" data-width="500" data-height="400">
+		open linked page in floating window with specific size
+	</a>
+</h3>
+<h3>
+	<a class="nsbbox" title="iFrame 500px X 400px" href="linkedPage.html" data-width="500" data-height="400" data-scrolling="no">
+		open linked page in floating, window with specific size, no scrolling
+	</a>
+</h3>
+</body>
+</html>

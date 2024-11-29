@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Claribel Pereyra</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <header>
+        <a href="#main">
+            <h1>Claribel Pereyra</h1>
+        </a>
+        <nav>
+            <ul>
+                <li><a href="#sobre-mi">Sobre Mí</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main">
+        <section id="sobre-mi">
+            <div class="sobre-mi-contenido">
+                <h2>Sobre Mí</h2>
+                <div class="bio">
+                    <p>¡Hola! Soy Claribel Pereyra, desarrolladora Full Stack y estudiante de la Universidad Argentina
+                        de la Empresa.</p>
+                    <p>
+                        En esta web, presento los proyectos desarrollados a lo largo del segundo cuatrimestre del año
+                        2024 en la materia
+                        <strong>Diseño y Desarrollo Web</strong>.
+                    </p>
+                    <p>
+                        En ellos se podrá observar el hilo conductor entre los ejercicios y la evolución del aprendizaje
+                        a medida que avanzaban
+                        en contenido y dificultad. Espero que disfrutes explorándolos tanto como yo disfruté creándolos.
+                    </p>
+                </div>
+
+                <div class="skills-section">
+                    <h3>Mis Habilidades</h3>
+                    <div class="skills-slider">
+                        <button class="slider-arrow prev" aria-label="Anterior">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+
+                        <div class="skills-container">
+                            <div class="skills-track">
+                                <div class="skill-card">
+                                    <img src="img/html.png" alt="HTML5" class="skill-icon">
+                                </div>
+                                <div class="skill-card">
+                                    <img src="img/css.png" alt="CSS3" class="skill-icon">
+                                </div>
+                                <div class="skill-card">
+                                    <img src="img/js.png" alt="JavaScript" class="skill-icon">
+                                </div>
+                                <div class="skill-card">
+                                    <img src="img/node.png" alt="Node.js" class="skill-icon">
+                                </div>
+                                <div class="skill-card">
+                                    <img src="img/git.png" alt="Git" class="skill-icon">
+                                </div>
+                                <div class="skill-card">
+                                    <img src="img/aws.png" alt="aws" class="skill-icon">
+                                </div>
+                                <div class="skill-card">
+                                    <img src="img/py.png" alt="Py" class="skill-icon">
+                                </div>
+                                <div class="skill-card">
+                                    <img src="img/ts.png" alt="Ts" class="skill-icon">
+                                </div>
+                                <div class="skill-card">
+                                    <img src="img/kotlin.png" alt="Kotlin" class="skill-icon">
+                                </div>
+                                <div class="skill-card">
+                                    <img src="img/java.png" alt="Java" class="skill-icon">
+                                </div>
+                            </div>
+                        </div>
+
+                        <button class="slider-arrow next" aria-label="Siguiente">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
+
+                    <div class="slider-dots"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="proyectos">
+            <h2>Mis Proyectos</h2>
+            <div class="proyectos-container">
+                <div class="proyectos-lista">
+                    <div class="proyecto-item active" data-proyecto="1">
+                        <h3>Ejercicio 1</h3>
+                        <p>Primera página web, formateo de texto, listas, imágenes y enlaces.</p>
+                    </div>
+                    <div class="proyecto-item" data-proyecto="2">
+                        <h3>Ejercicio 2</h3>
+                        <p>Web personal básica, blog de viajes, página de producto y sitio web de noticias.</p>
+                    </div>
+                    <div class="proyecto-item" data-proyecto="3">
+                        <h3>Ejercicio 3</h3>
+                        <p>Comenzando con CSS</p>
+                    </div>
+                    <div class="proyecto-item" data-proyecto="4">
+                        <h3>Ejercicio 4</h3>
+                        <p>Propiedades de cajas</p>
+                    </div>
+                    <div class="proyecto-item" data-proyecto="5">
+                        <h3>Ejercicio 5</h3>
+                        <p>Maquetado fijo y fluido</p>
+                    </div>
+                    <div class="proyecto-item" data-proyecto="6">
+                        <h3>Ejercicio 6</h3>
+                        <p>Media Queries</p>
+                    </div>
+                    <div class="proyecto-item" data-proyecto="7">
+                        <h3>Ejercicio 7</h3>
+                        <p>Primeros pasos con Boostrap</p>
+                    </div>
+                    <div class="proyecto-item" data-proyecto="8">
+                        <h3>Ejercicio 8</h3>
+                        <p>Introducción a Javascript</p>
+                    </div>
+                    <div class="proyecto-item" data-proyecto="9">
+                        <h3>Ejercicio 9</h3>
+                        <p>jQuery</p>
+                    </div>
+                    <div class="proyecto-item" data-proyecto="10">
+                        <h3>Ejercicio 10</h3>
+                        <p>Plugins de jQuery</p>
+                    </div>
+                </div>
+
+
+                <div class="proyecto-preview active" id="proyecto-1">
+                    <h3>Primera página web, formateo de texto, listas, imágenes y enlaces.</h3>
+                    <div class="proyecto-contenido">
+                        <iframe src="ejercicio1/01.html" width="100%" height="500px" frameborder="0"></iframe>
+                        <iframe src="ejercicio1/02.html" width="100%" height="500px" frameborder="0"></iframe>
+                        <iframe src="ejercicio1/03.html" width="100%" height="500px" frameborder="0"></iframe>
+                        <iframe src="ejercicio1/04.html" width="100%" height="500px" frameborder="0"></iframe>
+                    </div>
+                </div>
+
+                <div class="proyecto-preview" id="proyecto-2">
+                    <h3>Web personal básica, blog de viajes, página de producto y sitio web de noticias.</h3>
+                    <select id="exercise-selector" class="styled-select">
+                        <option value="ejercicio2/ejercicio1.html">Ejercicio 1</option>
+                        <option value="ejercicio2/ejercicio2.html">Ejercicio 2</option>
+                        <option value="ejercicio2/ejercicio3.html">Ejercicio 3</option>
+                        <option value="ejercicio2/ejercicio4.html">Ejercicio 4</option>
+                    </select>
+                    <div class="proyecto-contenido">
+                        <iframe id="exercise-frame" src="ejercicio2/ejercicio1.html" width="100%" height="500px" frameborder="0"></iframe>
+                        <iframe id="exercise-frame" src="ejercicio2/ejercicio2.html" width="100%" height="500px" frameborder="0"></iframe>
+                        <iframe id="exercise-frame" src="ejercicio2/ejercicio3.html" width="100%" height="500px" frameborder="0"></iframe>
+                        <iframe id="exercise-frame" src="ejercicio2/ejercicio4.html" width="100%" height="500px" frameborder="0"></iframe>
+                    </div>
+                </div>
+
+                <div class="proyecto-preview" id="proyecto-3">
+                    <h3>Comenzando con CSS</h3>
+                    <div class="proyecto-contenido">
+                        <iframe src="ejercicio3/index.html" width="100%" height="500px" frameborder="0"></iframe>
+                    </div>
+                </div>
+
+                <div class="proyecto-preview" id="proyecto-4">
+                    <h3>Propiedades de cajas</h3>
+                    <div class="proyecto-contenido">
+                        <iframe src="ejercicio4/index.html" width="100%" height="500px" frameborder="0"></iframe>
+                    </div>
+                </div>
+
+                <div class="proyecto-preview" id="proyecto-5">
+                    <h3>Maquetado fijo y fluido</h3>
+                    <select id="exercise-selector" class="styled-select">
+                        <option value="ejercicio5/01-fijo.html">Maquedatado fijo</option>
+                        <option value="ejercicio5/02-fluido.html">Maquedatado fluido</option>
+                    </select>
+                    <div class="proyecto-contenido">
+                        <iframe id="exercise-frame" src="ejercicio5/01-fijo.html" width="100%" height="500px" frameborder="0"></iframe>
+                        <iframe id="exercise-frame" src="ejercicio5/02-fluido.html" width="100%" height="500px" frameborder="0"></iframe>
+                    </div>
+                </div>
+
+                <div class="proyecto-preview" id="proyecto-6">
+                    <h3>Media Queries</h3>
+                    <div class="proyecto-contenido">
+                        <iframe id="exercise-frame" src="ejercicio6/ejercicio6.html" width="100%" height="500px" frameborder="0"></iframe>
+                    </div>
+                </div>
+
+                <div class="proyecto-preview" id="proyecto-7">
+                    <h3>Primeros pasos con Boostrap</h3>
+                    <select id="exercise-selector" class="styled-select">
+                        <option value="ejercicio7/01.html">Ejercicio 1</option>
+                        <option value="ejercicio7/02.html">Ejercicio 2</option>
+                        <option value="ejercicio7/03.html">Ejercicio 3</option>
+                    </select>
+                    <div class="proyecto-contenido">
+                        <iframe id="exercise-frame" src="ejercicio7/01.html" width="100%" height="500px" frameborder="0"></iframe>
+                        <iframe id="exercise-frame" src="ejercicio7/02.html" width="100%" height="500px" frameborder="0"></iframe>
+                        <iframe id="exercise-frame" src="ejercicio7/03.html" width="100%" height="500px" frameborder="0"></iframe>
+                    </div>
+                </div>
+
+                <div class="proyecto-preview" id="proyecto-8">
+                    <h3>Introducción a Javascript</h3>
+                    <select id="exercise-selector-8" class="styled-select" onchange="loadExercise8(this.value)">
+                        <option value="">Selecciona un ejercicio</option>
+                        <option value="ejercicios8/01.html">Ejercicio 1</option>
+                        <option value="ejercicios8/02.html">Ejercicio 2</option>
+                        <option value="ejercicios8/03.html">Ejercicio 3</option>
+                        <option value="ejercicios8/04.html">Ejercicio 4</option>
+                        <option value="ejercicios8/05.html">Ejercicio 5</option>
+                        <option value="ejercicios8/06.html">Ejercicio 6</option>
+                    </select>
+                    <div class="proyecto-contenido">
+                        <iframe id="exercise-frame-8" src="" width="100%" height="500px" frameborder="0"></iframe>
+                    </div>
+                </div>
+
+                <div class="proyecto-preview" id="proyecto-9">
+                    <h3>jQuery</h3>
+                    <div class="proyecto-contenido">
+                        <iframe id="exercise-frame" src="ejercicio9/index.html" width="100%" height="500px" frameborder="0"></iframe>
+                    </div>
+                </div>
+
+                <div class="proyecto-preview" id="proyecto-10">
+                    <h3>Plugins de jQuery</h3>
+                    <select id="exercise-selector" class="styled-select">
+                        <option value="ejercicio10/01/01.html">Ejercicio 1</option>
+                        <option value="ejercicio10/02/02.html">Ejercicio 2</option>
+                        <option value="ejercicio10/03/03.html">Ejercicio 3</option>
+                        <option value="ejercicio10/04/04.html">Ejercicio 4</option>
+                        <option value="ejercicio10/05/05.html">Ejercicio 5</option>
+                    </select>
+                    <div class="proyecto-contenido">
+                        <iframe id="exercise-frame" src="ejercicio10/01/01.html" width="100%" height="500px" frameborder="0"></iframe>
+                        <iframe id="exercise-frame" src="ejercicio10/02/02.html" width="100%" height="500px" frameborder="0"></iframe>
+                        <iframe id="exercise-frame" src="ejercicio10/03/03.html" width="100%" height="500px" frameborder="0"></iframe>
+                        <iframe id="exercise-frame" src="ejercicio10/04/04.html" width="100%" height="500px" frameborder="0"></iframe>
+                        <iframe id="exercise-frame" src="ejercicio10/05/05.html" width="100%" height="500px" frameborder="0"></iframe>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="contacto" aria-labelledby="contacto-titulo">
+            <h2 id="contacto-titulo">Contacto</h2>
+            <div class="contacto-container">
+                <div class="contacto-info">
+                    <h3>¡Hablemos!</h3>
+                    <p>Estoy disponible para nuevos proyectos y oportunidades.</p>
+
+                    <div class="contacto-metodos">
+                        <a href="mailto:clpereyra@uade.edu.ar" class="contacto-item email" aria-label="Enviar email">
+                            <i class="fas fa-envelope" aria-hidden="true"></i>
+                            <span>clpereyra@uade.edu.ar</span>
+                        </a>
+
+                        <a href="https://www.linkedin.com/in/claribel-pereyra-9801601a4/" class="contacto-item linkedin"
+                            aria-label="Visitar perfil de LinkedIn">
+                            <i class="fab fa-linkedin" aria-hidden="true"></i>
+                            <span>LinkedIn</span>
+                        </a>
+
+                        <a href="https://github.com/claribelpereyra" class="contacto-item github"
+                            aria-label="Ver repositorios en GitHub">
+                            <i class="fab fa-github" aria-hidden="true"></i>
+                            <span>GitHub</span>
+                        </a>
+                    </div>
+                </div>
+
+                <form class="contacto-form" id="contactForm" onsubmit="return handleSubmit(event)">
+                    <div class="form-group">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" id="nombre" name="nombre" required aria-required="true">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required aria-required="true">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="mensaje">Mensaje</label>
+                        <textarea id="mensaje" name="mensaje" rows="5" required aria-required="true"></textarea>
+                    </div>
+
+                    <button type="submit" class="btn" id="submitBtn">
+                        <span>Enviar mensaje</span>
+                        <i class="fas fa-paper-plane" aria-hidden="true"></i>
+                    </button>
+
+                    <div class="mensaje-exito" id="mensajeExito" aria-live="polite">
+                        ¡Mensaje enviado con éxito!
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-info">
+                <h3>Claribel Pereyra</h3>
+                <p>Desarrolladora Web</p>
+                <div class="social-links">
+                    <a href="https://github.com/claribelpereyra" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/claribel-pereyra-9801601a4/" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="mailto:clpereyra@uade.edu.ar" aria-label="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-nav">
+                <nav aria-label="Navegación del pie de página">
+                    <ul>
+                        <li><a href="#sobre-mi">Sobre Mí</a></li>
+                        <li><a href="#proyectos">Proyectos</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2024 Claribel Pereyra. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="js/navigation.js"></script>
+</body>
+
+</html>

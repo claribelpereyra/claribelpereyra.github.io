@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primer práctica</title>
+    <style>
+        .prueba_4 {
+            display: none;
+        }
+        .horizon{
+            display: flex;
+            flex-direction: row;
+        }
+
+        @media (min-width: 960px) {
+            .color {
+                background-color: red;
+            }
+        }
+        @media (max-width: 600px) {
+            .fuente {
+                font-size: 2rem;
+            }
+        
+        }
+        @media (orientation: portrait) {
+            .vertical {
+                display: none;
+            }
+        }
+        @media (orientation: landscape) {
+            .horizontal {
+                display: block;
+            }
+        }
+        @media (max-width: 768px) {
+            .columnas {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+        @media (min-width: 1200px) {
+            .espacio {
+                margin: 200px;
+            }
+        }
+        @media (max-width: 576px) {
+            h1,h2,h3,h4,h5{
+                font-family: sans-serif;
+            }
+        }
+        @media (max-width: 480px) {
+            .foto {
+                width: 20%;
+            }
+        }
+    </style>
+</head>
+<body class="color ">
+    <header class="vertical"><h1>Primer</h1></header>
+    <main ><h2>Segundo</h2>
+    <p class="horizontal prueba_4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati itaque neque, sint perferendis fugit ratione, id earum alias maxime animi expedita modi dolore non? Atque, veritatis nesciunt. Harum, maxime animi?
+    Repudiandae minus quisquam provident, quo reprehenderit sint, fugiat blanditiis omnis possimus quia magnam dicta perferendis. Nobis architecto consequuntur, vel omnis veniam ducimus deleniti ipsa enim quis, dolorum neque obcaecati fugiat?
+    Doloribus commodi eum nisi, odit culpa aliquam expedita repellat dolores. Obcaecati earum ipsam eveniet iusto, dolorem quibusdam. Delectus eos harum vel sequi, ipsam pariatur, cupiditate culpa non hic repudiandae minima!
+    Hic voluptas ut blanditiis fuga nisi quidem reprehenderit ipsa, minima magnam deserunt? Ducimus pariatur sequi fuga aliquam exercitationem, fugiat assumenda laborum ullam, iste inventore animi provident nostrum sit quidem beatae.
+    Eos nihil fugit enim odit totam, delectus quae reprehenderit tempore eveniet, eligendi maxime impedit velit numquam vitae esse mollitia, quis adipisci distinctio! Fuga veniam eius at laboriosam fugit voluptate aut?
+    Error quidem officiis earum eos repellat iusto! Blanditiis molestiae, officia aut error quae voluptate necessitatibus aperiam. Soluta inventore enim explicabo, eveniet eaque harum, modi id et minima iure facilis animi.
+    Earum illum, doloremque animi delectus nesciunt sed. Laborum dignissimos delectus consequatur aspernatur quidem autem assumenda odio vel quisquam ea. Totam quo dolor incidunt error laudantium harum molestias quibusdam consequuntur ad.
+    Dolorum qui ut sed aliquam enim quod modi, voluptate hic omnis officiis atque doloribus optio impedit ad obcaecati deserunt odit laboriosam. Labore sed maiores numquam fuga non sunt, assumenda laborum?
+    Ad fuga, quidem rem, debitis cum quia sequi laudantium quo cupiditate repudiandae mollitia architecto animi, nemo tempore iure nesciunt. Ullam debitis recusandae ea ipsum, vero impedit non laudantium fugit sapiente?
+    Fugit consectetur expedita nulla, recusandae beatae sed quasi sit vitae fugiat cumque fuga tenetur, nostrum cum dolor. Eum velit ratione suscipit et, dolorum similique aut dicta quaerat commodi maxime voluptas.</p></main>
+   <div class="columnas horizon">
+     <h3 class="espacio">Tercer</h3>
+     <h4 class="espacio">Cuarta</h4>
+     <h5 class="espacio">Quinta</h5>
+   </div>
+   
+    <figure class="foto">
+        <img src="img/1975.png" alt="" class="foto">
+        <img src="img/airbag.png" alt="" class="foto">
+    </figure>
+
+</body>
+</html>
