@@ -1,3 +1,13 @@
+// Definir loadExercise8 fuera del DOMContentLoaded para que sea global
+window.loadExercise8 = function(value) { 
+    const iframe = document.getElementById('exercise-frame-8');
+    if (value) {
+        iframe.src = value; 
+    } else {
+        iframe.src = ''; 
+    }
+};
+
 document.addEventListener('DOMContentLoaded', () => {
     const navLinks = document.querySelectorAll('nav a');
 
@@ -167,13 +177,40 @@ document.addEventListener('DOMContentLoaded', () => {
     nextButton.addEventListener('mouseenter', stopAutoplay);
     dotsContainer.addEventListener('mouseenter', stopAutoplay);
 
-    document.addEventListener('DOMContentLoaded', () => {
-        window.loadExercise8 = function(value) { 
-            const iframe = document.getElementById('exercise-frame-8');
-            if (value) {
-                iframe.src = value; 
-            } else {
-                iframe.src = ''; 
+    // Nuevo código para los demás selectores
+    const selectors = document.querySelectorAll('.styled-select');
+    
+    selectors.forEach(select => {
+        // Solo procesar los selectores que NO son del ejercicio 8
+        if (select.id !== 'exercise-selector-8') {
+            select.addEventListener('change', function() {
+                const proyectoPreview = this.closest('.proyecto-preview');
+                if (!proyectoPreview) return;
+
+                const iframes = proyectoPreview.querySelectorAll('.proyecto-contenido iframe');
+                const selectedUrl = this.value;
+
+                iframes.forEach(iframe => {
+                    // Verificar si el iframe pertenece al ejercicio 8
+                    if (iframe.id === 'exercise-frame-8') return;
+                    
+                    if (iframe.src.includes(selectedUrl)) {
+                        iframe.style.display = 'block';
+                    } else {
+                        iframe.style.display = 'none';
+                    }
+                });
+            });
+
+            // Mostrar el primer iframe por defecto (excepto para ejercicio 8)
+            const proyectoPreview = select.closest('.proyecto-preview');
+            if (proyectoPreview && !proyectoPreview.id.includes('proyecto-8')) {
+                const firstOption = select.querySelector('option');
+                if (firstOption) {
+                    select.value = firstOption.value;
+                    const event = new Event('change');
+                    select.dispatchEvent(event);
+                }
             }
         }
     });
